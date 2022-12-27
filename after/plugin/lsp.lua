@@ -2,6 +2,11 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
+-- Might need to manually configure the godot editor to point to the correct port
+lsp.configure('gdscript', {
+  force_setup = true
+})
+
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
