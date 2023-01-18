@@ -6,23 +6,31 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
-
+  
+  -- Telescope for fuzzy finding
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		-- or                            , branch = '0.1.x',
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
 
-	-- Using Packer
+	-- Theme
 	use('navarasu/onedark.nvim')
-
+  
+  -- Who knows
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 	use('nvim-treesitter/playground')
-
+  
+  -- File jumping
 	use('theprimeagen/harpoon')
+
+  -- See all the undos
 	use('mbbill/undotree')
+
+  -- Git 
 	use('tpope/vim-fugitive')
 
+  -- LSP Stuff
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
@@ -45,6 +53,7 @@ return require('packer').startup(function(use)
 		}
 	}
 
+  -- Autoclose brackets/parens
 	use {
 		"windwp/nvim-autopairs",
 		config = function() require("nvim-autopairs").setup {} end
