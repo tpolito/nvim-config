@@ -2,16 +2,17 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
+lsp.ensure_installed({
+	'tsserver',
+  'lua_ls',
+	'eslint',
+})
+
 -- Might need to manually configure the godot editor to point to the correct port
 lsp.configure('gdscript', {
   force_setup = true
 })
 
-lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-	'sumneko_lua',
-})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
