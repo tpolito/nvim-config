@@ -2,6 +2,7 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
+-- I uninstalled deno so that it wouldn't clash with TS. Moving forward I can run MasonInstall deno if I start working deno again.
 lsp.ensure_installed({
   'tsserver',
   'lua_ls',
@@ -22,10 +23,6 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   -- ['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ["Space"] = cmp.mapping.complete(),
 })
-
---lsp.set_preferences({
---sign_icons = { }
---})
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
