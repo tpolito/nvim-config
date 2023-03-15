@@ -1,5 +1,5 @@
 function SetColorTheme()
-	vim.cmd.colorscheme('onedark')
+	vim.cmd.colorscheme('dracula')
 end
 
 SetColorTheme()

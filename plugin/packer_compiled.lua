@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -149,11 +154,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tyler/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/tyler/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
