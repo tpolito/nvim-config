@@ -1,8 +1,7 @@
 vim.g.mapleader = "'"
 -- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>e", function()
-	vim.cmd("vertical resize " .. (50))
-	vim.cmd("Lex")
+	vim.cmd("Ex")
 end)
 vim.keymap.set("n", "<leader>lf", function() vim.lsp.buf.format() end)
 vim.keymap.set("n", "U", vim.cmd.redo)
